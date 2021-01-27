@@ -1,5 +1,24 @@
 # Entrega-VirtualDreams
 
+## Ejecución del programa
+### Ejercicio 3
+Para ejecutar el ejercicio 3, deben seguirse los siguientes pasos:
+1) Abrir la consola (CMD).
+2) Copiar la ruta del archivo a ejecutar (en este caso el mismo será mostrarPersonas). También otra alternativa es recorrer directorios utilizando el comando "cd" seguido del directorio disponible dentro del cual estamos, hasta llegar al directorio donde se encuentra el archivo que queremos ejecutar. 
+3) Instalar los módulos node que necesitamos (si es que no los instalamos previamente). Los mismos son los módulos request y request-promise. Para instalarlos se deben utilizar los comandos: "npm install request" y "npm install request-promise".
+4) Una vez instalados los módulos, se procede a la ejecución del mismo. Para ello, utilizamos el comando "node mostrarPersonas".
+
+
+### Ejercicios 5 y 6
+Ambos ejercicios deben ser ejecutados al mismo tiempo para observar que funcionan. 
+1) Abrir la consola (CMD).
+2) Copiar la ruta del archivo a ejecutar (en este caso el mismo será servidorJS). También otra alternativa es recorrer directorios utilizando el comando "cd" seguido del directorio disponible dentro del cual estamos, hasta llegar al directorio donde se encuentra el archivo que queremos ejecutar. 
+3) Instalar los módulos node que necesitamos (si es que no los instalamos previamente). Los mismos son los módulos request y request-promise. Para instalarlos se deben utilizar los comandos: "npm install express" y "npm install request".
+4) Una vez instalados los módulos, se procede a la ejecución del mismo. Para ello, utilizamos el comando "node servidorJS".
+5) Abrimos el archivo HTML, el cual nos dirigirá a una WEB con campos a rellenar.
+6) Rellenar los campos y presionar "Enviar".
+7) Observar que si todo sale correctamente, la página web mostrará el código "201", lo que significa que se enviaron los datos que se ingresaron. Además la consola mostrará un mensaje indicando que se realizó un POST.
+
 
 ## Ejercicio2 
 
