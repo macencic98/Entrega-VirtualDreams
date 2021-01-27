@@ -1,6 +1,7 @@
 //Obtengo los modulos necesarios para desarrollar el servidor:
 //Express para crear la app, el cual tiene los métodos para especificar la acción realizada dependiendo el verbo HTTP usado en la petición
-
+//Request nos otorga métodos que nos permiten enviar peticiones a servidores  
+//BodyParser nos permite obtener modulos para transformar los datos que se reciben a un formato en particular
 const request = require('request');
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -33,12 +34,12 @@ app.post('/', (peticion, respuesta) =>{
         request.post('https://reclutamiento-14cf7.firebaseio.com/personas.json',
             {
                 json: {
-                    "nombre": req.body.nombre || "-",
-                    "apellido": req.body.apellido,
-                    "dni": req.body.dni
+                    "nombre": peticion.body.nombre || "-",
+                    "apellido": peticion.body.apellido,
+                    "dni": peticion.body.dni
                 }
             }, function(err){
-                res.respuesta(err?'Status Code: 500':'Status Code: 201');
+                respuesta.send(err?'Status Code: 500':'Status Code: 201');
                     //Si hubo algun error referido al servidor, emito un codigo de error 500 al cliente
                     //Si la peticion del cliente fue exitosa, le envio un mensaje con el codigo 201
             }
@@ -46,7 +47,7 @@ app.post('/', (peticion, respuesta) =>{
     }
     else {
         //Si en la petición del cliente hubo errores al enviar los datos, envío el codigo de error 400
-        res.respuesta('Status Code: 400');
+        respuesta.send('Status Code: 400');
     }
 });
 
