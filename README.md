@@ -1,8 +1,8 @@
 # Entrega-VirtualDreams
 
 ## Ejecución del programa
-### Ejercicio 3
-Para ejecutar el ejercicio 3, deben seguirse los siguientes pasos:
+### Ejercicio 4
+Para ejecutar el ejercicio 4, deben seguirse los siguientes pasos:
 1) Abrir la consola (CMD).
 2) Copiar la ruta del archivo a ejecutar (en este caso el mismo será mostrarPersonas). También otra alternativa es recorrer directorios utilizando el comando "cd" seguido del directorio disponible dentro del cual estamos, hasta llegar al directorio donde se encuentra el archivo que queremos ejecutar. 
 3) Instalar los módulos node que necesitamos (si es que no los instalamos previamente). Los mismos son los módulos request y request-promise. Para instalarlos se deben utilizar los comandos: "npm install request" y "npm install request-promise".
@@ -92,7 +92,9 @@ El estándar SOAP (Simple Object Access Protocol) establece cómo dos objetos en
 Envelope: raíz de la estructura, por lo tanto, es obligatoria, ya que identifica al mensaje como tal. 
 
 Header: permite enviar información sobre cómo se debe procesar el mensaje.
+
 Body: es obligatoria y contiene información sobre la llamada y la respuesta.
+
 Fault: contiene información sobre errores producidos durante el procesamiento y envío del mensaje (desde el emisor al receptor).
 
 Ejemplo obtenido de internet:
