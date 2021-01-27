@@ -53,19 +53,41 @@ El verbo que se utiliza al acceder a una página web es GET ya que en la petici�
 
 ### 8.	Explicar brevemente qué son las estructuras de datos JSON y XML dando ejemplo de estructuras posibles.
 
-JSON (JavaScript Object Notation) es un formato ligero de texto que permite el almacenamiento e intercambio de datos y resulta bastante sencillo de leer e interpretar, tanto para el programador como para la computadora. Ejemplo: { “nombre”: “Maxi”, “apellido”: “Cencic”, “edad”: 22, “familia”: [“Padre”, “Madre”, “Hermana”] }
-XML (Extensible Markup Language) es un formato de texto que también se utiliza para almacenar e intercambiar datos, pero con un formato más estricto y que lleva más tiempo que procesarlo que JSON. Ejemplo:
+JSON (JavaScript Object Notation) es un formato ligero de texto que permite el almacenamiento e intercambio de datos y resulta bastante sencillo de leer e interpretar, tanto para el programador como para la computadora. Es comúnmente utilizado para transmitir datos en aplicaciones web. La utilidad del JSON es la de poder recibir un objeto
+en forma de texto y luego transformarlo en el objeto original cuando se recibe a través del acceso a los campos. Ejemplo:
+{ “universidad”: "UNLAM",
+"carrera": "Ingenieria en Informatica",
+"materia": "Base de Datos"}
+
+XML (Extensible Markup Language) es un formato de texto que también se utiliza para almacenar e intercambiar datos, pero con un formato más estricto y que lleva más tiempo que procesarlo que JSON. El intercambio de datos como XML reduce la dificultad de transmitir información en formatos incompatibles porque los datos pueden ser leídos por diferentes aplicaciones incompatibles entre sí.Ejemplo:
+
+<?xml version="1.0" encoding="UTF-8"?>
+    <persona>
+        <nombre>Maxi</nombre>
+        <edad>22</edad>
+       </persona>
 
 ### 9.	Explicar brevemente el estándar SOAP
 
 El estándar SOAP (Simple Object Access Protocol) establece cómo dos objetos en procesos diferentes se pueden comunicar mediante el intercambio de datos, el cual se efectúa con la utilización de mensajes SOAP. Dichos mensajes son documentos XML y poseen una estructura definida:
-Envelope: raíz de la estructura, por lo tanto, es obligatoria, ya que identifica al mensaje como tal.
+Envelope: raíz de la estructura, por lo tanto, es obligatoria, ya que identifica al mensaje como tal. 
 Header: permite enviar información sobre cómo se debe procesar el mensaje.
 Body: es obligatoria y contiene información sobre la llamada y la respuesta.
 Fault: contiene información sobre errores producidos durante el procesamiento y envío del mensaje (desde el emisor al receptor).
 
+Ejemplo obtenido de internet:
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <getProductDetails xmlns="http://warehouse.example.com/ws">
+       <productId>827635</productId>
+     </getProductDetails>
+   </soap:Body>
+</soap:Envelope>
+
 
 ### 10.	Explicar brevemente el estándar REST Full
+El estándar Restful hace referencia a una API ( una forma de describir el intercambio de datos entre aplicaciones/sitios web usualmente a través de JSON/XML) ya construida con protocolo HTTP realizada con el estándar REST, el cual es una lógica de restricciones y recomendaciones sobre la cual se puede construir una API (se podría decir que es un tipo de arquitectura). Entonces si se implementa una API con la arquitectura REST, se puede decir que tenemos una restful API.
 
 
 ### 11.	¿Qué son los headers en un request? ¿Para qué se utiliza el key Content-type en un header?
+Los headers en un request contienen información en formato de parámetros que envía el cliente al realizar una petición. El key Content-Type en un header es una propiedad utilizada para indicar el tipo de contenido o formato del dato que se está enviando. Ejemplo: Content-Type: image/jpg
