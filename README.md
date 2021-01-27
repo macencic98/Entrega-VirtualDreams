@@ -90,6 +90,7 @@ XML (Extensible Markup Language) es un formato de texto que también se utiliza 
 
 El estándar SOAP (Simple Object Access Protocol) establece cómo dos objetos en procesos diferentes se pueden comunicar mediante el intercambio de datos, el cual se efectúa con la utilización de mensajes SOAP. Dichos mensajes son documentos XML y poseen una estructura definida:
 Envelope: raíz de la estructura, por lo tanto, es obligatoria, ya que identifica al mensaje como tal. 
+
 Header: permite enviar información sobre cómo se debe procesar el mensaje.
 Body: es obligatoria y contiene información sobre la llamada y la respuesta.
 Fault: contiene información sobre errores producidos durante el procesamiento y envío del mensaje (desde el emisor al receptor).
