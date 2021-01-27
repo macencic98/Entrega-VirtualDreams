@@ -57,7 +57,7 @@ function validoDatos(apellido, dni, nombre) {
     if (dni && apellido) {
         //Los campos apellido y nombre tienen que ser strings, por eso los valido definiendo una expresion regular
         let s = new RegExp("^[A-Za-z]+$");
-        if (!s.test(nombre) || !s.test(apellido))
+        if (!s.test(apellido) || (nombre && !s.test(nombre)))
             return false;
         
 
