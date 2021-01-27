@@ -13,7 +13,7 @@ Para ejecutar el ejercicio 4, deben seguirse los siguientes pasos:
 Ambos ejercicios deben ser ejecutados al mismo tiempo para observar que funcionan. 
 1) Abrir la consola (CMD).
 2) Copiar la ruta del archivo a ejecutar (en este caso el mismo será servidorJS). También otra alternativa es recorrer directorios utilizando el comando "cd" seguido del directorio disponible dentro del cual estamos, hasta llegar al directorio donde se encuentra el archivo que queremos ejecutar. 
-3) Instalar los módulos node que necesitamos (si es que no los instalamos previamente). Los mismos son los módulos request y request-promise. Para instalarlos se deben utilizar los comandos: "npm install express" y "npm install request".
+3) Instalar los módulos node que necesitamos (si es que no los instalamos previamente). Los mismos son los módulos request y request-promise. Para instalarlos se deben utilizar los comandos: "npm install express", "npm install request" y "npm install body-parser".
 4) Una vez instalados los módulos, se procede a la ejecución del mismo. Para ello, utilizamos el comando "node servidorJS".
 5) Abrimos el archivo HTML, el cual nos dirigirá a una WEB con campos a rellenar.
 6) Rellenar los campos y presionar "Enviar".
